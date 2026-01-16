@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0" />
+    <title>Webdesign MG by Raes | Premium Web Design for Local Businesses</title>
+    <meta name="description" content="Award-winning web design services in your city. We build high-converting websites for restaurants, gyms, and local businesses. Get a free quote today." />
+    <meta name="keywords" content="web design, local business website, restaurant web design, gym website, SEO services, Webdesign MG by Raes, responsive web design" />
+    <meta property="og:title" content="Webdesign MG by Raes | Elevate Your Digital Presence" />
+    <meta property="og:description" content="Professional, high-performance websites tailored for local business growth." />
+    <meta property="og:type" content="website" />
+    <meta name="theme-color" content="#050505" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              sans: ['Inter', 'sans-serif'],
+              serif: ['Playfair Display', 'serif'],
+            },
+            colors: {
+              brand: {
+                dark: '#050505',
+                gray: '#121212',
+                accent: '#3b82f6', 
+                surface: '#1a1a1a',
+                light: '#f5f5f5'
+              }
+            },
+            animation: {
+              'float': 'float 8s ease-in-out infinite',
+              'float-delayed': 'float 8s ease-in-out 4s infinite',
+              'spin-slow': 'spin 20s linear infinite',
+              'scroll': 'scroll 40s linear infinite',
+            },
+            keyframes: {
+              float: {
+                '0%, 100%': { transform: 'translateY(0)' },
+                '50%': { transform: 'translateY(-20px)' },
+              },
+              scroll: {
+                '0%': { transform: 'translateX(0)' },
+                '100%': { transform: 'translateX(-100%)' },
+              }
+            },
+            borderRadius: {
+              'organic-1': '60% 40% 30% 70% / 60% 30% 70% 40%',
+              'organic-2': '30% 70% 70% 30% / 30% 30% 70% 70%',
+              'organic-3': '50% 50% 20% 80% / 25% 80% 20% 75%',
+            }
+          }
+        }
+      }
+    </script>
+    <style>
+      ::-webkit-scrollbar {
+        width: 8px;
+      }
+      ::-webkit-scrollbar-track {
+        background: #050505;
+      }
+      ::-webkit-scrollbar-thumb {
+        background: #333;
+        border-radius: 4px;
+      }
+      ::-webkit-scrollbar-thumb:hover {
+        background: #555;
+      }
+      .perspective-1000 {
+        perspective: 1000px;
+      }
+      .preserve-3d {
+        transform-style: preserve-3d;
+      }
+      .backface-hidden {
+        backface-visibility: hidden;
+      }
+      .clip-triangle {
+        clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+      }
+      .clip-polygon {
+        clip-path: polygon(20% 0%, 80% 0%, 100% 20%, 100% 80%, 80% 100%, 20% 100%, 0% 80%, 0% 20%);
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react/": "https://esm.sh/react@^19.2.3/",
+    "react": "https://esm.sh/react@^19.2.3",
+    "react-dom/": "https://esm.sh/react-dom@^19.2.3/",
+    "lucide-react": "https://esm.sh/lucide-react@^0.562.0",
+    "framer-motion": "https://esm.sh/framer-motion@^12.26.2"
+  }
+}
+</script>
+</head>
+  <body class="bg-brand-dark text-white antialiased overflow-x-hidden selection:bg-brand-accent selection:text-white">
+    <div id="root"></div>
+  </body>
+</html>
